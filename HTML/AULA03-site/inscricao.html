@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+</head>
+<body>
+    <h1>Universidade do Trabalho Digital</h1>
+    <p>Formulário de Inscrição</p>
+    <ul type="none">
+        <li>
+            <a href="./index.html">início</a>
+        </li>
+        <li>
+            <a href="./cursos.html">cursos</a>
+        </li>
+        <li>
+            <a href="#">inscrição</a>
+        </li>
+    </ul>
+    <hr>
+    <br>
+    <h4>Formulário de Inscriçao</h4>
+
+    <form action="./index.html">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <input type="text" required name="nome" id="nomeId" placeholder="nome completo">
+            <br>
+            <label for="nascimentoId">Data de Nascimento</label>
+            <input type="date" name="nascimento" id="nascimentoId">
+            <br>
+            <input type="email" name="email" id="" placeholder="email@email.com">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Escolaridade</legend>
+            <p>Grau de Instrução</p>
+            <select name="escolaridade" id="escolaridadeId">
+                <option value="0" disabled selected>
+                    Selecione o Grau de Instrução
+                </option>
+                <option value="1">
+                    não alfabetizado
+                </option>
+                <option value="2">
+                    fundamental
+                </option>
+                <option value="3">
+                    ensino médio
+                </option>
+                <option value="4">
+                    superior
+                </option>
+                <option value="5">
+                    pós graduação
+                </option>
+                <option value="6">
+                    mestrado
+                </option>
+                <option value="7">
+                    doutorado
+                </option>
+            </select>
+            <p>Você tem conhecimento prévio em programação</p>
+            <label>
+                sim
+                <input type="radio" value="sim" name="conhecimentoPrevio" id="simId"> 
+            </label>
+            <label>
+                não
+                <input type="radio" checked value="não" name="conhecimentoPrevio" id="simId">
+            </label>
+        </fieldset>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

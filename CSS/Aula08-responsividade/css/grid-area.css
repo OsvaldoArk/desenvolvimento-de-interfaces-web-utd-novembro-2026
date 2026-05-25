@@ -1,0 +1,67 @@
+#container{
+    display: grid;
+    grid-template-rows: 10vh 40vh 40vh 10vh;
+    grid-template-columns: 40vw 40vw 20vw;
+    gap: 5px;
+    grid-template-areas: 
+                "navegacao navegacao navegacao"
+                "header header aside"
+                "esquerda direita aside"
+                "footer footer footer";
+}
+
+nav{
+    background-color: purple;
+    grid-area: navegacao;
+}
+
+header{
+    background-color: chartreuse;
+    grid-area: header;
+}
+
+aside{
+    background-color: palevioletred;
+    grid-area:aside;
+}
+
+#esquerda{
+    background-color: cadetblue;
+    grid-area:esquerda;
+}
+
+#direita{
+    background-color: crimson;
+    grid-area:direita;
+}
+
+footer{
+    background-color: coral;
+    grid-area:footer;
+}
+
+
+@media only screen and (max-width: 480px){
+
+    body{
+        background-color: black;
+    }
+    
+    #container{
+        display: grid;
+        grid-template-rows: 10vh 10vh 10vh 40vh 40vh 10vh;
+        grid-template-columns: 100vw;
+        gap: 5px;
+        grid-template-areas: 
+           "navegacao"
+           "header"
+           "aside"
+           "esquerda"
+           "direita"
+           "footer";
+    }
+}
+
+@media only screen and (max-width: 1279){
+
+}
