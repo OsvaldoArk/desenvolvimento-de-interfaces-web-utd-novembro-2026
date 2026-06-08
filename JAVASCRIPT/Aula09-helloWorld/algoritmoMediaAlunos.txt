@@ -1,0 +1,8 @@
+1 - receber a lista de alunos.
+2 - selecionar o aluno a receber a nota.
+3 - receber a primeira nota.
+4 - receber a segunda nota.
+5 - receber a enésima nota.
+6 - dividir a soma das notas pelo número de notas.
+7 - verificar a condição de aprovação.
+8 - imprimir o resultado final do(a) aluno(a).
