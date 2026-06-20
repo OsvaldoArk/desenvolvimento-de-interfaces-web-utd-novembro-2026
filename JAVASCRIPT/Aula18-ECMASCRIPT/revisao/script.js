@@ -12,11 +12,13 @@ const corpo = document.getElementById('tabela').children[1]
 let resposta = ''
 
 for(let indice = 0; indice < alunos.length;indice++){
+    console.log(alunos[indice])
 
-    const aluno = alunos[indice]
+    const {matricula,nome,idade,curso,turno,sala} = alunos[indice]
 
-    resposta+=('<tr><td>'+aluno.matricula+'</td><td>'+aluno.nome+'</td><td>'+aluno.idade+
-                            '</td><td>'+aluno.curso+'</td><td>'+aluno.turno+'</td><td>'+aluno.sala+'</td></tr>')   
+    resposta+=('<tr><td>'+matricula+'</td><td>'+nome+'</td><td>'+idade+
+                            '</td><td>'+curso+'</td><td>'+turno+'</td><td>'+sala+'</td></tr>')   
+
 }
 
 corpo.innerHTML= resposta
