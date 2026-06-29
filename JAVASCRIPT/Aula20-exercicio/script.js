@@ -31,7 +31,6 @@ document.querySelector('#carregar').addEventListener('click',async ()=>{
                 imagem.width = 80
 
                 coluna.appendChild(imagem)
-
             }
             else{
                 console.log(produto[dado])
