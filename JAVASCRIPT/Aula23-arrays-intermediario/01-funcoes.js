@@ -21,6 +21,9 @@ for(let atual = 0; atual < alunos.length; atual++){
 
 //alunos.sort((a, b)=> a.localeCompare(b))
 
-console.log(alunos)
+//console.log(alunos)
 
-//const numeros = [2, 31 , 9, 10, 6, 20, 1, 42]
+const numeros = [2, 31 , 9, 10, 6, 20, 1, 42]
+numeros.sort((x,y)=> y-x)
+
+console.log(numeros)
